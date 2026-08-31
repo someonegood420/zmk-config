@@ -18,14 +18,14 @@
         <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 
-    // Wire your 7 columns to pro_micro pins 9,10,11,12,13,14,15 in this order (col0..col6).
+    // Wire your 7 columns to pro_micro pins 9,10,16,18,19,20,21 in this order (col0..col6).
     col-gpios
         = <&pro_micro 9 GPIO_ACTIVE_HIGH>,
         <&pro_micro 10 GPIO_ACTIVE_HIGH>,
         <&pro_micro 16 GPIO_ACTIVE_HIGH>,
-        <&pro_micro 17 GPIO_ACTIVE_HIGH>,
-        <&pro_micro 13 GPIO_ACTIVE_HIGH>,
-        <&pro_micro 14 GPIO_ACTIVE_HIGH>,
-        <&pro_micro 15 GPIO_ACTIVE_HIGH>
+        <&pro_micro 18 GPIO_ACTIVE_HIGH>,
+        <&pro_micro 19 GPIO_ACTIVE_HIGH>,
+        <&pro_micro 20 GPIO_ACTIVE_HIGH>,
+        <&pro_micro 21 GPIO_ACTIVE_HIGH>
         ;
 };
