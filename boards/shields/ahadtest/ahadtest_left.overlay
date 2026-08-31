@@ -1,15 +1,11 @@
-// Right half: local rows 0-4, local cols 0-6, shifted into the global
-// matrix as rows 5-9 via row-offset (NOT col-offset - the two halves
-// share the same column range, 0-6, and are separated by row instead).
+// Left half: local rows 0-4, local cols 0-6.
+// No offset needed - left occupies the base of the global matrix.
 
-#include "ahadwireles.dtsi"
-
-&default_transform {
-    row-offset = <5>;
-};
+#include "ahadtest.dtsi"
 
 &kscan {
     // Wire your 5 row diodes to pro_micro pins 4,5,6,7,8 in this order (row0..row4).
+    // If you already wired different pins, edit the numbers below to match.
     row-gpios
         = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
         <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,

@@ -3,7 +3,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "ahadwireles-layouts.dtsi"
+#include "ahadtest-layouts.dtsi"
 
 / {
     chosen {

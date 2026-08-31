@@ -1,0 +1,5 @@
+config SHIELD_AHADTEST_LEFT
+    def_bool $(shields_list_contains,ahadTEST_left)
+
+config SHIELD_AHADTEST_RIGHT
+    def_bool $(shields_list_contains,ahadTEST_right)

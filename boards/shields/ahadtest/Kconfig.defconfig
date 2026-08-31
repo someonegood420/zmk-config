@@ -1,0 +1,16 @@
+if SHIELD_AHADTEST_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "ahadtest"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_AHADTEST_LEFT
+
+if SHIELD_AHADTEST_LEFT || SHIELD_AHADTEST_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_AHADTEST_LEFT || SHIELD_AHADTEST_RIGHT

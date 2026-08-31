@@ -3,8 +3,8 @@
 # for instructions.
 
 file_format: "1"
-id: ahadwireles
-name: ahadwirelesstest
+id: ahadtest
+name: ahadtest
 type: shield
 
 # Set this to a URL that documents the keyboard.
@@ -14,11 +14,11 @@ url: https://example.com
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
 features:
   - keys
-  - studio  # Remove this line if your keyboard will not support ZMK Studio
+  - studio # Remove this line if your keyboard will not support ZMK Studio
 
 requires:
   - pro_micro
 
 siblings:
-  - ahadwireles_left
-  - ahadwireles_right
+  - ahadtest_left
+  - ahadtest_right
