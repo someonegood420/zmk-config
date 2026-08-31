@@ -17,4 +17,9 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
+include:
+  - board: nice_nano@2.0.0//zmk
+    shield: ahadwireles_left
+  - board: nice_nano@2.0.0//zmk
+    shield: ahadwireles_right
 ---

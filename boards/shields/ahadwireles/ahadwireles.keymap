@@ -1,0 +1,80 @@
+// Best-effort QWERTY fill, in the exact same order as the transform map
+// in ahadwireles.dtsi. Row grouping (top row / top-letter row / home row /
+// bottom row / thumbs) is inferred confidently from your KLE y-offsets.
+// Left-to-right order WITHIN each row is a best guess, not guaranteed -
+// once you flash this, use ZMK Studio to drag-correct any key that's in
+// the wrong physical spot rather than editing this file blind.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                // top row (numbers)
+                &kp N1    &kp N0
+                &kp N2    &kp N4    &kp N9    &kp N7
+                &kp N3    &kp N8
+                &kp N5    &kp N6    &kp MINUS &kp EQUAL
+
+                // top letter row
+                &kp Q     &kp P
+                &kp W     &kp E     &kp O     &kp I
+                &kp R     &kp U
+                &kp T     &kp Y     &kp LBKT  &kp RBKT
+
+                // home row
+                &kp A     &kp SEMI
+                &kp S     &kp D     &kp L     &kp K
+                &kp F     &kp J
+                &kp G     &kp H     &kp SQT   &kp RET
+
+                // bottom row
+                &kp Z     &kp SLASH
+                &kp X     &kp C     &kp DOT   &kp COMMA
+                &kp V     &kp M
+                &kp B     &kp N     &kp BSLH  &kp FSLH
+
+                // thumb / extra row + joystick buttons
+                &kp LCTRL &kp RCTRL
+                &kp LALT  &kp RALT
+                &kp LGUI  &kp ESC   &kp TAB
+                &kp SPACE &kp BSPC  &kp DEL   &kp LSHFT &kp RSHFT &mo 1
+                &kp K_MUTE
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+                &trans &trans
+                &trans &trans &trans &trans
+                &trans &trans
+                &trans &trans &trans &trans
+
+                &trans &trans
+                &trans &trans &trans &trans
+                &trans &trans
+                &trans &trans &trans &trans
+
+                &trans &trans
+                &trans &trans &trans &trans
+                &trans &trans
+                &trans &trans &trans &trans
+
+                &trans &trans
+                &trans &trans &trans &trans
+                &trans &trans
+                &trans &trans &trans &trans
+
+                &trans &trans
+                &trans &trans
+                &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans
+                &trans
+            >;
+        };
+    };
+};

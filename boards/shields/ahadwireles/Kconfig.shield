@@ -1,0 +1,5 @@
+config SHIELD_AHADWIRELES_LEFT
+    def_bool $(shields_list_contains,ahadwireles_left)
+
+config SHIELD_AHADWIRELES_RIGHT
+    def_bool $(shields_list_contains,ahadwireles_right)
