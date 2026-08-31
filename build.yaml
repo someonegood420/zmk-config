@@ -19,6 +19,6 @@
 #
 include:
   - board: nice_nano@2.0.0//zmk
-    shield: ahadwireles_left
+    shield: ahadtest_left
   - board: nice_nano@2.0.0//zmk
-    shield: ahadwireles_right
+    shield: ahadtest_right
